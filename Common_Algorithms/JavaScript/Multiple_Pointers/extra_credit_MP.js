@@ -4,4 +4,8 @@
 
 //restrictions time complexity = O(n) / space complexity O(n)
 
-function areThereDuplicates(...args) {}
+function areThereDuplicates(num) {
+  return num;
+}
+
+module.exports = areThereDuplicates;
