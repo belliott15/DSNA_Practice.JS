@@ -21,4 +21,8 @@ test("function that accepts an array and a value and if the value is in the arra
   ).toBe(-1);
 
   expect(binarySearch([], 8)).toBe(-1);
+
+  expect(
+    binarySearch([3, 5, 7, 1, 7, 3, 7, 2, 17, 11, 34, 78, 62, 42, 15], 17)
+  ).toBe(10);
 });
