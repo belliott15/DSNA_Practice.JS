@@ -31,7 +31,6 @@ function binarySearch(arr, val) {
   }
 
   const newArr = arr.sort((a, b) => a - b);
-  console.log(newArr);
 
   let start = 0;
   let end = newArr.length - 1;
