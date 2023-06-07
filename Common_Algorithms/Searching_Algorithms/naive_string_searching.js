@@ -17,16 +17,13 @@ function naiveString(longStr, shortStr) {
   for (let i = 0; i < longStr.length; i++) {
     //loop through the short string while in the long string
     for (let j = 0; j < shortStr.length; j++) {
-      console.log(shortStr[j], longStr[i + j]);
       //conditional if character in short string does not match long string break out
       if (longStr[i + j] !== shortStr[j]) {
-        console.log("Break");
         break;
       }
       //conditional if j reaches the total length of the short string then those
       //characters are correct and total can be incremented
       if (j === shortStr.length - 1) {
-        console.log("Found it!");
         total++;
       }
     }
